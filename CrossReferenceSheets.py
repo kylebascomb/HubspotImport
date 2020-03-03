@@ -1,4 +1,4 @@
-import pandas as pd
+
 import xlrd as xlrd
 from Company import Company
 from tempfile import TemporaryFile
@@ -20,9 +20,9 @@ def format_domain(domain):
 
 def write_to_file(newNames, exportSheet):
     rowIndex = 1
-    ORIGIN = "John Hiller List"
+    ORIGIN = "NONE"
     STAGE = "Lead"
-    OWNER = "Pia Corpuz"
+    OWNER = "NONE"
     #Write headers
     exportSheet.write(0, 0, "Name")
     exportSheet.write(0, 1, "Company Domain")
